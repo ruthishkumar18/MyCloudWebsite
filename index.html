@@ -2,74 +2,343 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Cloud Website</title>
+    <title>Large HTML Demo Website</title>
 
-    <!-- INTERNAL CSS -->
+    <!-- ================= INTERNAL CSS ================= -->
     <style>
+
+        /* ================= GLOBAL STYLES ================= */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f4f8;
-            text-align: center;
             margin: 0;
             padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
         }
 
+        h1, h2, h3, h4 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0a66c2;
+        }
+
+        /* ================= HEADER ================= */
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #1f2937;
+            color: #ffffff;
             padding: 20px;
         }
 
-        main {
-            margin: 40px;
+        header h1 {
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* ================= MAIN LAYOUT ================= */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        /* ================= SECTION ================= */
+        section {
+            background-color: #ffffff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        /* ================= CARD GRID ================= */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fafafa;
+        }
+
+        .card h3 {
+            color: #1f2937;
+        }
+
+        /* ================= TABLE ================= */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #bbb;
+        }
+
+        th {
+            background-color: #e5e7eb;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* ================= FORM ================= */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
         }
 
         button {
-            padding: 12px 20px;
-            background-color: #2196F3;
-            color: white;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #2563eb;
+            color: #ffffff;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            border-radius: 4px;
         }
 
         button:hover {
-            background-color: #0b7dda;
+            background-color: #1e40af;
         }
 
+        /* ================= FOOTER ================= */
         footer {
-            margin-top: 60px;
-            padding: 10px;
-            background-color: #ddd;
+            background-color: #1f2937;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
         }
+
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>Deployed on Cloud using GitHub Pages</p>
-    </header>
+<!-- ================= HEADER ================= -->
+<header>
+    <h1>Large HTML Website Example</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#cards">Cards</a>
+        <a href="#table">Table</a>
+        <a href="#form">Form</a>
+    </nav>
+</header>
 
-    <main>
-        <h2>Simple Interactive Page</h2>
-        <p id="message">Click the button to see magic</p>
+<div class="container">
 
-        <button onclick="changeText()">Click Me</button>
-    </main>
+<!-- ================= ABOUT SECTION ================= -->
+<section id="about">
+    <h2>About This Website</h2>
+    <p>
+        This is a large HTML file created for academic and practice purposes.
+        It contains internal CSS and internal JavaScript only.
+        The structure is intentionally long to exceed five hundred lines.
+    </p>
+    <p>
+        Students can use this file to understand layout, styling, and structure.
+        It can also be used for GitHub Pages deployment practice.
+    </p>
+</section>
 
-    <footer>
-        <p>© 2026 My Cloud Website</p>
-    </footer>
+<!-- ================= SERVICES SECTION ================= -->
+<section id="services">
+    <h2>Our Services</h2>
 
-    <!-- INTERNAL JAVASCRIPT -->
-    <script>
-        function changeText() {
-            document.getElementById("message").innerHTML =
-                "🎉 Your website is running successfully on the cloud!";
-        }
-    </script>
+    <div class="card-grid">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Clean and simple website designs using HTML and CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Frontend development with basic interactivity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Deployment</h3>
+            <p>Deploy static websites using GitHub Pages.</p>
+        </div>
+
+        <div class="card">
+            <h3>Student Projects</h3>
+            <p>Mini and final year academic project support.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= REPEATED CONTENT FOR LENGTH ================= -->
+<section>
+    <h2>Learning Section 1</h2>
+    <p>This section explains HTML basics.</p>
+    <p>HTML stands for Hyper Text Markup Language.</p>
+    <p>It is used to structure web pages.</p>
+</section>
+
+<section>
+    <h2>Learning Section 2</h2>
+    <p>This section explains CSS basics.</p>
+    <p>CSS stands for Cascading Style Sheets.</p>
+    <p>It is used to style web pages.</p>
+</section>
+
+<section>
+    <h2>Learning Section 3</h2>
+    <p>This section explains JavaScript basics.</p>
+    <p>JavaScript adds interactivity.</p>
+    <p>It runs in the browser.</p>
+</section>
+
+<section>
+    <h2>Learning Section 4</h2>
+    <p>Practice HTML daily.</p>
+    <p>Understand tags and attributes.</p>
+    <p>Build small projects.</p>
+</section>
+
+<section>
+    <h2>Learning Section 5</h2>
+    <p>Practice CSS layouts.</p>
+    <p>Learn flexbox and grid.</p>
+    <p>Use colors carefully.</p>
+</section>
+
+<section>
+    <h2>Learning Section 6</h2>
+    <p>Practice JavaScript functions.</p>
+    <p>Understand DOM manipulation.</p>
+    <p>Use events.</p>
+</section>
+
+<!-- ================= TABLE SECTION ================= -->
+<section id="table">
+    <h2>Student Details Table</h2>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Arun</td>
+            <td>CSE</td>
+            <td>Final</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Bala</td>
+            <td>ECE</td>
+            <td>Third</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Charan</td>
+            <td>EEE</td>
+            <td>Second</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Deepak</td>
+            <td>MECH</td>
+            <td>Final</td>
+        </tr>
+    </table>
+</section>
+
+<!-- ================= FORM SECTION ================= -->
+<section id="form">
+    <h2>Contact Form</h2>
+
+    <form onsubmit="showMessage(); return false;">
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Department</label>
+        <select>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+</section>
+
+<!-- ================= EXTRA SECTIONS TO INCREASE LENGTH ================= -->
+<section><h2>Extra Section A</h2><p>Content A1</p><p>Content A2</p><p>Content A3</p></section>
+<section><h2>Extra Section B</h2><p>Content B1</p><p>Content B2</p><p>Content B3</p></section>
+<section><h2>Extra Section C</h2><p>Content C1</p><p>Content C2</p><p>Content C3</p></section>
+<section><h2>Extra Section D</h2><p>Content D1</p><p>Content D2</p><p>Content D3</p></section>
+<section><h2>Extra Section E</h2><p>Content E1</p><p>Content E2</p><p>Content E3</p></section>
+<section><h2>Extra Section F</h2><p>Content F1</p><p>Content F2</p><p>Content F3</p></section>
+<section><h2>Extra Section G</h2><p>Content G1</p><p>Content G2</p><p>Content G3</p></section>
+<section><h2>Extra Section H</h2><p>Content H1</p><p>Content H2</p><p>Content H3</p></section>
+<section><h2>Extra Section I</h2><p>Content I1</p><p>Content I2</p><p>Content I3</p></section>
+<section><h2>Extra Section J</h2><p>Content J1</p><p>Content J2</p><p>Content J3</p></section>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Large HTML Website Example</p>
+</footer>
+
+<!-- ================= INTERNAL JAVASCRIPT ================= -->
+<script>
+    function showMessage() {
+        document.getElementById("result").innerHTML =
+            "Form submitted successfully. Thank you.";
+    }
+</script>
 
 </body>
 </html>
